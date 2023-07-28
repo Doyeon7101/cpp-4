@@ -22,8 +22,6 @@ public:
     void setType(std::string const & type);
     virtual AMateria* clone() const = 0;
     virtual void use(ICharacter& target);
-    void use(std::string const & target);
-    
 };
 
 #endif

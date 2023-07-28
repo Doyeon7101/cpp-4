@@ -28,12 +28,5 @@ void AMateria::setType(std::string const & type) {
 }
 
 void AMateria::use(ICharacter& target) {
-    std::cout << "AMateria::use(ICharacter& target)" << std::endl;
-    (void)target;
+    // std::cout << "AMateria::use(ICharacter& target) - " << target.getName() << std::endl;
 }
-
-void AMateria::use(std::string const & target) {
-    std::cout << "AMateria::use(std::string const & target)" << std::endl;
-    (void)target;
-}
-

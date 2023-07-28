@@ -14,7 +14,6 @@ public:
 
     AMateria* clone() const;
     void use( ICharacter& target );
-    // void use(std::string const & target);
 };
 
 #endif
