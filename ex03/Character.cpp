@@ -27,8 +27,10 @@ Character &Character::operator=( Character const & src ) {
 }
 
 Character::~Character() {
-    for (int i = 0; i < 4; i++)
-        delete _inven[i];
+    // for (int i = 0; i < 4; i++) {
+    //     delete _inven[i];
+    //     _inven[i] = NULL;
+    // }
 }
 
 std::string const &Character::getName() const {

@@ -7,7 +7,6 @@ RM = rm -f
 
 SRC_FILES = main.cpp \
 			AMateria.cpp \
-			ICharacter.cpp \
 			Character.cpp \
 			Cure.cpp \
 			Ice.cpp \
