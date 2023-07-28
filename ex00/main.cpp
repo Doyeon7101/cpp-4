@@ -23,5 +23,6 @@ int main( void ) {
     delete meta;
     delete j;
     delete i;
+    system("leaks ex00");
     return 0;
 }
