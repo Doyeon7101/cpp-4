@@ -19,13 +19,10 @@ Dog::~Dog ( void ) {
 
 Dog& Dog::operator = ( const Dog& src ) {
     std::cout << "Dog assignation operator called" << std::endl;
-    if (this != &src) {
-        this->setType(src.getType());
-        _brain = new Brain(*src._brain);
-    }
+    if (this != &src)
+        *_brain = *src._brain;
     return *this;
 }
-
 void Dog::makeSound( void ) const {
     std::cout << "[Dog] Woooof Woooof U・ﻌ・U" << std::endl;
 }

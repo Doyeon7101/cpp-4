@@ -19,10 +19,8 @@ Cat::~Cat ( void ) {
 
 Cat& Cat::operator = ( const Cat& src ) {
     std::cout << "Cat assignation operator called" << std::endl;
-    if (this != &src) {
-        this->setType(src.getType());
-        _brain = new Brain(*src._brain);
-    }
+    if (this != &src)
+        *_brain = *src._brain;
     return *this;
 }
 

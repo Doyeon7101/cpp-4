@@ -15,14 +15,13 @@ Dog::Dog( const Dog& src ){
 Dog::~Dog ( void ) {
     std::cout << "Dog destructor called" << std::endl;
     delete _brain;
+    _brain = nullptr;
 }
 
 Dog& Dog::operator = ( const Dog& src ) {
     std::cout << "Dog assignation operator called" << std::endl;
-    if (this != &src) {
-        this->setType(src.getType());
-        _brain = new Brain(*src._brain);
-    }
+    if (this != &src)
+        *_brain = *src._brain;
     return *this;
 }
 
